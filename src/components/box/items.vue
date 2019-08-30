@@ -75,7 +75,7 @@
                     searchQuery = appConfig.searchText;
                 }
 
-                this.$http.get('https://itunes.apple.com/search?media=all&term=' + searchQuery)
+                this.$http.jsonp('https://itunes.apple.com/search?media=all&term=' + searchQuery)
                     .then((response) => response.json())
                     .then(result => {
                         this.items = result.results;
