@@ -3,7 +3,7 @@
         <form class="search-form" id="search" style="display: block; position: absolute; top: -55px; width: 400px">
             <input type="text" class="form-control" placeholder="Search any media here..."
                    v-model="searchQuery" v-on:click="searchClear" v-on:keyup.enter="goSearch">
-            <svg class="search-form-svg" style="top: 15px;" v-on:click="searchClear">
+            <svg class="search-form-svg" style="top: 15px;" v-on:click="goSearch">
                 <use xlink:href="#maginifierTool"></use>
             </svg>
             <span class="hot-key-hint hot-key-hint--left">/</span>
