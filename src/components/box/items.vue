@@ -106,6 +106,8 @@
             },
             showDetails(item) {
                 appConfig.box = item;
+                console.dir(item)
+                localStorage.setItem('item', JSON.stringify(item));
                 this.$router.push('box-show');
             }
         }
